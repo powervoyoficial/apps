@@ -49,7 +49,7 @@ class _AccountDetailsScreenState extends State<AccountDetailsScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-          appBar: AppGlobal.buildSimpleAppBar(context, "Account Details".tr()),
+          appBar: AppGlobal.buildSimpleAppBar(context, "Detalles de tu cuenta".tr()),
           body: SingleChildScrollView(
             child: Form(
               key: _key,
@@ -71,7 +71,7 @@ class _AccountDetailsScreenState extends State<AccountDetailsScreen> {
                         children: ListTile.divideTiles(context: context, tiles: [
                           ListTile(
                             title: Text(
-                              'First Name'.tr(),
+                              'Primer nombre'.tr(),
                               style: TextStyle(
                                 color: isDarkMode(context) ? Colors.white : Colors.black,
                               ),
@@ -93,7 +93,7 @@ class _AccountDetailsScreenState extends State<AccountDetailsScreen> {
                           ),
                           ListTile(
                             title: Text(
-                              'Last Name'.tr(),
+                              'Apellido'.tr(),
                               style: TextStyle(color: isDarkMode(context) ? Colors.white : Colors.black),
                             ).tr(),
                             trailing: ConstrainedBox(
@@ -130,7 +130,7 @@ class _AccountDetailsScreenState extends State<AccountDetailsScreen> {
                         tiles: [
                           ListTile(
                             title: Text(
-                              'Email Address'.tr(),
+                              'Email'.tr(),
                               style: TextStyle(color: isDarkMode(context) ? Colors.white : Colors.black),
                             ).tr(),
                             trailing: ConstrainedBox(
@@ -149,7 +149,7 @@ class _AccountDetailsScreenState extends State<AccountDetailsScreen> {
                           ),
                           ListTile(
                             title: Text(
-                              'Phone Number'.tr(),
+                              'Número de teléfono'.tr(),
                               style: TextStyle(color: isDarkMode(context) ? Colors.white : Colors.black),
                             ).tr(),
                             trailing: InkWell(
@@ -175,7 +175,7 @@ class _AccountDetailsScreenState extends State<AccountDetailsScreen> {
                             _validateAndSave();
                           },
                           child: Text(
-                            'Save',
+                            'Guardar',
                             style: TextStyle(fontSize: 18, color: Color(COLOR_PRIMARY)),
                           ).tr(),
                         ),
@@ -199,7 +199,7 @@ class _AccountDetailsScreenState extends State<AccountDetailsScreen> {
       },
     );
     Widget continueButton = TextButton(
-      child: const Text("Continue").tr(),
+      child: const Text("Continúa").tr(),
       onPressed: () {
         if (_isPhoneValid) {
           setState(() {
@@ -213,7 +213,7 @@ class _AccountDetailsScreenState extends State<AccountDetailsScreen> {
 
     // set up the AlertDialog
     AlertDialog alert = AlertDialog(
-      title: const Text("Change Phone Number").tr(),
+      title: const Text("Cambiar número de teléfono").tr(),
       content: Container(
         padding: const EdgeInsets.symmetric(horizontal: 10),
         decoration: BoxDecoration(borderRadius: BorderRadius.circular(10), shape: BoxShape.rectangle, border: Border.all(color: Colors.grey.shade200)),
@@ -225,7 +225,7 @@ class _AccountDetailsScreenState extends State<AccountDetailsScreen> {
           ignoreBlank: true,
           autoValidateMode: AutovalidateMode.onUserInteraction,
           inputDecoration: InputDecoration(
-            hintText: 'Phone Number'.tr(),
+            hintText: 'phone number'.tr(),
             border: const OutlineInputBorder(
               borderSide: BorderSide.none,
             ),
@@ -237,7 +237,7 @@ class _AccountDetailsScreenState extends State<AccountDetailsScreen> {
           inputBorder: const OutlineInputBorder(
             borderSide: BorderSide.none,
           ),
-          initialValue: PhoneNumber(isoCode: 'US'),
+          initialValue: PhoneNumber(isoCode: 'MX'),
           selectorConfig: const SelectorConfig(selectorType: PhoneInputSelectorType.DIALOG),
         ),
       ),
@@ -320,13 +320,13 @@ class _AccountDetailsScreenState extends State<AccountDetailsScreen> {
       MyAppState.currentUser = user;
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(
           content: Text(
-            "Details saved successfully",
+            "Los detalles se guardaron exitosamente",
         style: TextStyle(fontSize: 17),
       ).tr()));
     } else {
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(
           content: Text(
-            "Couldn't save details, Please try again.",
+            "No se guardaron los cambios, inténtelo de nuevo.",
         style: TextStyle(fontSize: 17),
       ).tr()));
     }

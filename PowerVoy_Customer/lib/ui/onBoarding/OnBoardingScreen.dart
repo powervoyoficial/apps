@@ -16,17 +16,17 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
   final List<String> _titlesList = [
     // easyLocal.tr('Welcome to FOODIES'),
     // 'Order Food'.tr(),
-    'Add Address'.tr(),
-    'Choose Your Favorite Food'.tr(),
-    'Fastest Delivery'.tr(),
+    'Añade tu domicilio'.tr(),
+    'Elige tu comida favorita'.tr(),
+    'Entrega rápida'.tr(),
   ];
 
   final List<String> _subtitlesList = [
     // 'Log in and order delicious food from restaurants around you.'.tr(),
     // 'Hungry? Order food in just a few clicks and we\'ll take care of you.'.tr(),
-    'Find perfect restaurant nearby or  place order at your favorite restaurant in few clicks.'.tr(),
-    'A diverse list of different dining restaurants throughout the territory and around your area carefully selected'.tr(),
-    'Get your favorite food fastest delivered at your doorstep'.tr(),
+    'Explora una variedad de restaurantes y cocina a tu alcance.'.tr(),
+    'Explora menús completos y encuentra la comida que se adapte a tu estado de ánimo.'.tr(),
+    'Con entregas rápidas y seguras, puedes disfrutar de tus platos favoritos en la comodidad de tu hogar.'.tr(),
   ];
 
   final List<dynamic> _imageList = [
@@ -76,7 +76,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6)), backgroundColor: Color(COLOR_PRIMARY)),
                         child: Text(
-                          "GET STARTED".tr(),
+                          "Comenzar".tr(),
                           style: TextStyle(fontSize: 16),
                         ),
                         onPressed: () {
@@ -147,7 +147,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                         pushReplacement(context, AuthScreen());
                       },
                       child: Text(
-                        "SKIP".tr(),
+                        "Saltar".tr(),
                         style: TextStyle(fontSize: 18, color: Color(COLOR_PRIMARY), fontFamily: 'Poppinsm'),
                       )))),
           Visibility(
@@ -164,7 +164,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6)), backgroundColor: Color(COLOR_PRIMARY)),
                             child: Text(
-                              "NEXT".tr(),
+                              "Siguiente".tr(),
                               style: TextStyle(fontSize: 16, color: isDarkMode(context) ? Color(0xffFFFFFF) : Color(0XFF333333)),
                             ),
                             onPressed: () {

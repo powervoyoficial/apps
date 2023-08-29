@@ -39,7 +39,7 @@ class _LoginScreen extends State<LoginScreen> {
             Padding(
               padding: const EdgeInsets.only(top: 32.0, right: 16.0, left: 16.0),
               child: Text(
-                'Sing In',
+                'Iniciar sesión',
                 style: TextStyle(color: Color(COLOR_PRIMARY), fontSize: 25.0, fontWeight: FontWeight.bold),
               ).tr(),
             ),
@@ -60,7 +60,7 @@ class _LoginScreen extends State<LoginScreen> {
                     cursorColor: Color(COLOR_PRIMARY),
                     decoration: InputDecoration(
                       contentPadding: EdgeInsets.only(left: 16, right: 16),
-                      hintText: 'Email Address'.tr(),
+                      hintText: 'Email'.tr(),
                       focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(25.0), borderSide: BorderSide(color: Color(COLOR_PRIMARY), width: 2.0)),
                       errorBorder: OutlineInputBorder(
                         borderSide: BorderSide(color: Theme.of(context).errorColor),
@@ -95,7 +95,7 @@ class _LoginScreen extends State<LoginScreen> {
                     cursorColor: Color(COLOR_PRIMARY),
                     decoration: InputDecoration(
                       contentPadding: EdgeInsets.only(left: 16, right: 16),
-                      hintText: 'Password'.tr(),
+                      hintText: 'Contraseña'.tr(),
                       focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(25.0), borderSide: BorderSide(color: Color(COLOR_PRIMARY), width: 2.0)),
                       errorBorder: OutlineInputBorder(
                         borderSide: BorderSide(color: Theme.of(context).errorColor),
@@ -122,7 +122,7 @@ class _LoginScreen extends State<LoginScreen> {
                 child: GestureDetector(
                   onTap: () => push(context, ResetPasswordScreen()),
                   child: Text(
-                    'Forgot password?'.tr(),
+                    'Olvidaste tu contraseña?'.tr(),
                     style: TextStyle(color: Colors.lightBlue, fontWeight: FontWeight.bold, letterSpacing: 1),
                   ),
                 ),
@@ -152,7 +152,7 @@ class _LoginScreen extends State<LoginScreen> {
                     ),
                   ),
                   child: Text(
-                    'Log In'.tr(),
+                    'Iniciar Sesión'.tr(),
                     style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
@@ -167,7 +167,7 @@ class _LoginScreen extends State<LoginScreen> {
               padding: const EdgeInsets.all(32.0),
               child: Center(
                 child: Text(
-                  'or',
+                  'o',
                   style: TextStyle(color: isDarkMode(context) ? Colors.white : Colors.black),
                 ).tr(),
               ),
@@ -248,7 +248,7 @@ class _LoginScreen extends State<LoginScreen> {
                         color: Color(COLOR_PRIMARY),
                       ),
                       Text(
-                        'Login with phone number'.tr(),
+                        'Usar Mi Número Telefónico'.tr(),
                         style: TextStyle(color: Color(COLOR_PRIMARY), fontWeight: FontWeight.bold, fontSize: 16, letterSpacing: 1),
                       ),
                     ])),

@@ -81,7 +81,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     push(context, AccountDetailsScreen(user: user));
                   },
                   title: Text(
-                    "Account Details",
+                    "Detalles de la cuenta",
                     style: TextStyle(fontSize: 16),
                   ).tr(),
                   leading: Icon(
@@ -107,7 +107,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     push(context, ContactUsScreen());
                   },
                   title: Text(
-                    "Contact Us",
+                    "Contáctanos",
                     style: TextStyle(fontSize: 16),
                   ).tr(),
                   leading: Hero(
@@ -178,7 +178,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0), side: BorderSide(color: isDarkMode(context) ? Colors.grey.shade700 : Colors.grey.shade200)),
                 ),
                 child: Text(
-                  'Log Out',
+                  'Cerrar sesión',
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: isDarkMode(context) ? Colors.white : Colors.black),
                 ).tr(),
                 onPressed: () async {

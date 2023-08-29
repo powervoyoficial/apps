@@ -63,7 +63,7 @@ class SearchScreenState extends State<SearchScreen> {
                       onSearchTextChanged(value);
                     },
                     decoration: InputDecoration(
-                      hintText: 'Search menu, restaurant or etc...'.tr(),
+                      hintText: 'Busca menú, restaurante o etc...'.tr(),
                       contentPadding: const EdgeInsets.only(left: 10, right: 10, top: 10),
                       hintStyle: const TextStyle(color: Color(0XFF8A8989), fontFamily: 'Poppinsr'),
                       focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(10.0), borderSide: BorderSide(color: Color(COLOR_PRIMARY), width: 2.0)),

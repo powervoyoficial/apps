@@ -66,7 +66,7 @@ class ContainerScreen extends StatefulWidget {
   final DrawerSelection drawerSelection;
 
   ContainerScreen({Key? key, required this.user, currentWidget, appBarTitle, this.drawerSelection = DrawerSelection.Home})
-      : this.appBarTitle = appBarTitle ?? 'Home'.tr(),
+      : this.appBarTitle = appBarTitle ?? 'PowerVoy'.tr(),
         this.currentWidget = currentWidget ?? homePageThem == "theme_2"
             ? HomeScreenTwo(
                 user: MyAppState.currentUser,
@@ -182,7 +182,7 @@ class _ContainerScreen extends State<ContainerScreen> {
         if (!(_currentWidget is HomeScreen)) {
           setState(() {
             _drawerSelection = DrawerSelection.Home;
-            _appBarTitle = 'Restaurants'.tr();
+            _appBarTitle = 'Restaurantes'.tr();
             if (homePageThem == "theme_2") {
               _currentWidget = HomeScreenTwo(
                 user: MyAppState.currentUser,
@@ -201,7 +201,7 @@ class _ContainerScreen extends State<ContainerScreen> {
           if (cantExit) {
             final snack = SnackBar(
               content: Text(
-                'Press Back button again to Exit'.tr(),
+                'Presiona el boton de retorno para salir'.tr(),
                 style: TextStyle(color: Colors.white),
               ),
               duration: Duration(seconds: 2),
@@ -286,12 +286,12 @@ class _ContainerScreen extends State<ContainerScreen> {
                                 selectedColor: Color(COLOR_PRIMARY),
                                 child: ListTile(
                                   selected: _drawerSelection == DrawerSelection.Home,
-                                  title: Text('Restaurants').tr(),
+                                  title: Text('Restaurantes').tr(),
                                   onTap: () {
                                     Navigator.pop(context);
                                     setState(() {
                                       _drawerSelection = DrawerSelection.Home;
-                                      _appBarTitle = 'Restaurants'.tr();
+                                      _appBarTitle = 'Restaurantes'.tr();
                                       if (homePageThem == "theme_2") {
                                         _currentWidget = HomeScreenTwo(
                                           user: MyAppState.currentUser,
@@ -356,7 +356,7 @@ class _ContainerScreen extends State<ContainerScreen> {
                                 selectedColor: Color(COLOR_PRIMARY),
                                 child: ListTile(
                                     selected: _drawerSelection == DrawerSelection.Search,
-                                    title: Text('Search').tr(),
+                                    title: Text('Buscador').tr(),
                                     leading: Icon(Icons.search),
                                     onTap: () async {
                                       push(context, const SearchScreen());
@@ -367,7 +367,7 @@ class _ContainerScreen extends State<ContainerScreen> {
                                 selectedColor: Color(COLOR_PRIMARY),
                                 child: ListTile(
                                   selected: _drawerSelection == DrawerSelection.LikedRestaurant,
-                                  title: Text('Favourite Restaurants').tr(),
+                                  title: Text('Restaurantes Favoritos').tr(),
                                   onTap: () {
                                     if (MyAppState.currentUser == null) {
                                       Navigator.pop(context);
@@ -376,7 +376,7 @@ class _ContainerScreen extends State<ContainerScreen> {
                                       Navigator.pop(context);
                                       setState(() {
                                         _drawerSelection = DrawerSelection.LikedRestaurant;
-                                        _appBarTitle = 'Favourite Restaurants'.tr();
+                                        _appBarTitle = 'Restaurantes Favoritos'.tr();
                                         _currentWidget = FavouriteRestaurantScreen();
                                       });
                                     }
@@ -389,7 +389,7 @@ class _ContainerScreen extends State<ContainerScreen> {
                                 selectedColor: Color(COLOR_PRIMARY),
                                 child: ListTile(
                                   selected: _drawerSelection == DrawerSelection.LikedProduct,
-                                  title: const Text('Favourite Foods').tr(),
+                                  title: const Text('Comidas Favoritas').tr(),
                                   onTap: () {
                                     Navigator.pop(context);
                                     if (MyAppState.currentUser == null) {
@@ -397,7 +397,7 @@ class _ContainerScreen extends State<ContainerScreen> {
                                     } else {
                                       setState(() {
                                         _drawerSelection = DrawerSelection.LikedProduct;
-                                        _appBarTitle = 'Favourite Foods'.tr();
+                                        _appBarTitle = 'Comidas Favoritas'.tr();
                                         _currentWidget = const FavouriteItemScreen();
                                       });
                                     }
@@ -436,7 +436,7 @@ class _ContainerScreen extends State<ContainerScreen> {
                                 child: ListTile(
                                   selected: _drawerSelection == DrawerSelection.Cart,
                                   leading: Icon(CupertinoIcons.cart),
-                                  title: Text('Cart').tr(),
+                                  title: Text('Carrito de Compras').tr(),
                                   onTap: () {
                                     if (MyAppState.currentUser == null) {
                                       Navigator.pop(context);
@@ -445,7 +445,7 @@ class _ContainerScreen extends State<ContainerScreen> {
                                       Navigator.pop(context);
                                       setState(() {
                                         _drawerSelection = DrawerSelection.Cart;
-                                        _appBarTitle = 'Your Cart'.tr();
+                                        _appBarTitle = 'Tu Carrito'.tr();
                                         _currentWidget = CartScreen(
                                           fromContainer: true,
                                         );
@@ -460,7 +460,7 @@ class _ContainerScreen extends State<ContainerScreen> {
                                 child: ListTile(
                                   selected: _drawerSelection == DrawerSelection.Profile,
                                   leading: Icon(CupertinoIcons.person),
-                                  title: Text('Profile').tr(),
+                                  title: Text('Perfil').tr(),
                                   onTap: () {
                                     if (MyAppState.currentUser == null) {
                                       Navigator.pop(context);
@@ -469,7 +469,7 @@ class _ContainerScreen extends State<ContainerScreen> {
                                       Navigator.pop(context);
                                       setState(() {
                                         _drawerSelection = DrawerSelection.Profile;
-                                        _appBarTitle = 'My Profile'.tr();
+                                        _appBarTitle = 'profile'.tr();
                                         _currentWidget = ProfileScreen(
                                           user: user,
                                         );
@@ -493,7 +493,7 @@ class _ContainerScreen extends State<ContainerScreen> {
                                     width: 24,
                                     height: 24,
                                   ),
-                                  title: Text('Orders').tr(),
+                                  title: Text('Ordenes').tr(),
                                   onTap: () {
                                     if (MyAppState.currentUser == null) {
                                       Navigator.pop(context);
@@ -502,7 +502,7 @@ class _ContainerScreen extends State<ContainerScreen> {
                                       Navigator.pop(context);
                                       setState(() {
                                         _drawerSelection = DrawerSelection.Orders;
-                                        _appBarTitle = 'Orders'.tr();
+                                        _appBarTitle = 'orders'.tr();
                                         _currentWidget = OrdersScreen();
                                       });
                                     }
@@ -552,7 +552,7 @@ class _ContainerScreen extends State<ContainerScreen> {
                                     width: 28,
                                     color: Colors.grey,
                                   ),
-                                  title: const Text('Refer a friend').tr(),
+                                  title: const Text('Refiere a un Amigo').tr(),
                                   onTap: () async {
                                     if (MyAppState.currentUser == null) {
                                       Navigator.pop(context);
@@ -577,12 +577,12 @@ class _ContainerScreen extends State<ContainerScreen> {
                                             ? Colors.grey.shade200
                                             : Colors.grey.shade600,
                                   ),
-                                  title: const Text('Language').tr(),
+                                  title: const Text('Lenguaje').tr(),
                                   onTap: () {
                                     Navigator.pop(context);
                                     setState(() {
                                       _drawerSelection = DrawerSelection.chooseLanguage;
-                                      _appBarTitle = 'Language'.tr();
+                                      _appBarTitle = 'language'.tr();
                                       _currentWidget = LanguageChooseScreen(
                                         isContainer: true,
                                       );
@@ -596,7 +596,7 @@ class _ContainerScreen extends State<ContainerScreen> {
                                 child: ListTile(
                                   selected: _drawerSelection == DrawerSelection.inbox,
                                   leading: Icon(CupertinoIcons.chat_bubble_2_fill),
-                                  title: Text('Restaurant Inbox').tr(),
+                                  title: Text('Mensajería con Restaurant').tr(),
                                   onTap: () {
                                     if (MyAppState.currentUser == null) {
                                       Navigator.pop(context);
@@ -605,7 +605,7 @@ class _ContainerScreen extends State<ContainerScreen> {
                                       Navigator.pop(context);
                                       setState(() {
                                         _drawerSelection = DrawerSelection.inbox;
-                                        _appBarTitle = 'Restaurant Inbox'.tr();
+                                        _appBarTitle = 'chat restaurant'.tr();
                                         _currentWidget = InboxScreen();
                                       });
                                     }
@@ -618,7 +618,7 @@ class _ContainerScreen extends State<ContainerScreen> {
                                 child: ListTile(
                                   selected: _drawerSelection == DrawerSelection.driver,
                                   leading: Icon(CupertinoIcons.chat_bubble_2_fill),
-                                  title: Text('Driver Inbox').tr(),
+                                  title: Text('Chat con Repartidores').tr(),
                                   onTap: () {
                                     if (MyAppState.currentUser == null) {
                                       Navigator.pop(context);
@@ -627,7 +627,7 @@ class _ContainerScreen extends State<ContainerScreen> {
                                       Navigator.pop(context);
                                       setState(() {
                                         _drawerSelection = DrawerSelection.driver;
-                                        _appBarTitle = 'Driver Inbox'.tr();
+                                        _appBarTitle = 'chat deliver'.tr();
                                         _currentWidget = InboxDriverScreen();
                                       });
                                     }
@@ -640,7 +640,7 @@ class _ContainerScreen extends State<ContainerScreen> {
                                 child: ListTile(
                                   selected: _drawerSelection == DrawerSelection.termsCondition,
                                   leading: const Icon(Icons.policy),
-                                  title: const Text('Terms and Condition').tr(),
+                                  title: const Text('Términos y Condiciones').tr(),
                                   onTap: () async {
                                     push(context, const TermsAndCondition());
                                   },
@@ -652,7 +652,7 @@ class _ContainerScreen extends State<ContainerScreen> {
                                 child: ListTile(
                                   selected: _drawerSelection == DrawerSelection.privacyPolicy,
                                   leading: const Icon(Icons.privacy_tip),
-                                  title: const Text('Privacy policy').tr(),
+                                  title: const Text('Política de privacidad').tr(),
                                   onTap: () async {
                                     push(context, const PrivacyPolicyScreen());
                                   },
@@ -664,7 +664,7 @@ class _ContainerScreen extends State<ContainerScreen> {
                                 child: ListTile(
                                     selected: _drawerSelection == DrawerSelection.Logout,
                                     leading: Icon(Icons.logout),
-                                    title: Text(MyAppState.currentUser == null ? 'Login' : 'Log Out').tr(),
+                                    title: Text(MyAppState.currentUser == null ? 'Iniciar Sesión' : 'Abandonar Sesión').tr(),
                                     onTap: () async {
                                       if (MyAppState.currentUser == null) {
                                         pushAndRemoveUntil(context, AuthScreen(), false);
@@ -933,7 +933,7 @@ class _ContainerScreen extends State<ContainerScreen> {
                                     } else {
                                       setState(() {
                                         _drawerSelection = DrawerSelection.Cart;
-                                        _appBarTitle = 'Your Cart'.tr();
+                                        _appBarTitle = 'Carrito'.tr();
                                         _currentWidget = CartScreen(
                                           fromContainer: true,
                                         );

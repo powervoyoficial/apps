@@ -142,7 +142,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ? Center(child: CircularProgressIndicator())
               : (MyAppState.selectedPosotion.latitude == 0 && MyAppState.selectedPosotion.longitude == 0)
                   ? Center(
-                      child: showEmptyState("We don't have your location.".tr(), context, description: "Set your location to started searching for restaurants in your area".tr(), action: () async {
+                      child: showEmptyState("No encontramos tu ubicación.".tr(), context, description: "Configura tu ubicación y encuentra restaurantes cerca de tí".tr(), action: () async {
                         LocationResult result = await Navigator.of(context).push(MaterialPageRoute(builder: (context) => PlacePicker(GOOGLE_API_KEY)));
 
                         setState(() {
@@ -198,7 +198,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                   }
                                                 });
                                               },
-                                              child: Text("Change".tr()),
+                                              child: Text("Cambiar".tr()),
                                               style: ElevatedButton.styleFrom(
                                                 backgroundColor: Colors.white,
                                                 foregroundColor: Color(COLOR_PRIMARY),
@@ -212,7 +212,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                       child: Row(
                                         children: [
                                           Expanded(
-                                            child: Text("Find your Restaurant".tr(), style: TextStyle(fontSize: 22, color: Colors.white, fontFamily: "Poppinssb")).tr(),
+                                            child: Text("Encuentra tu restaurante".tr(), style: TextStyle(fontSize: 20, color: Colors.white, fontFamily: "Poppinssb")).tr(),
                                           ),
                                           DropdownButton(
                                             // Not necessary for Option 1
@@ -274,7 +274,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                             ),
                             buildTitleRow(
-                              titleValue: "Categories".tr(),
+                              titleValue: "Categorías".tr(),
                               onClick: () {
                                 push(
                                   context,
@@ -310,7 +310,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                             },
                                           ));
                                     } else {
-                                      return showEmptyState('No Categories'.tr(), context);
+                                      return showEmptyState('Sin Categorías'.tr(), context);
                                     }
                                   }),
                             ),
@@ -337,7 +337,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               mainAxisAlignment: MainAxisAlignment.start,
                               children: [
                                 buildTitleRow(
-                                  titleValue: "Top Selling".tr(),
+                                    titleValue: "Más Vendidos".tr(),
                                   onClick: () {
                                     push(
                                       context,
@@ -348,7 +348,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 SizedBox(
                                   height: 120,
                                   child: lstNearByFood.isEmpty
-                                      ? showEmptyState('No popular Item found'.tr(), context)
+                                      ? showEmptyState('No se encontraron Ítems'.tr(), context)
                                       : ListView.builder(
                                           scrollDirection: Axis.horizontal,
                                           itemCount: lstNearByFood.length >= 15 ? 15 : lstNearByFood.length,
@@ -370,7 +370,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               mainAxisAlignment: MainAxisAlignment.start,
                               children: [
                                 buildTitleRow(
-                                  titleValue: "New Arrivals".tr(),
+                                  titleValue: "Novedades".tr(),
                                   onClick: () {
                                     push(
                                       context,
@@ -412,7 +412,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               ],
                             ),
                             buildTitleRow(
-                              titleValue: "Offers For You".tr(),
+                              titleValue: "Ofertas".tr(),
                               onClick: () {
                                 push(
                                   context,
@@ -423,7 +423,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               },
                             ),
                             offerVendorList.isEmpty
-                                ? showEmptyState('No Offers Found'.tr(), context)
+                                ? showEmptyState('No se encontraron ofertas'.tr(), context)
                                 : Container(
                                     width: MediaQuery.of(context).size.width,
                                     height: 300,
@@ -458,7 +458,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             Column(
                               children: [
                                 buildTitleRow(
-                                  titleValue: "Popular Restaurant".tr(),
+                                  titleValue: "Restaurantes populares".tr(),
                                   onClick: () {
                                     push(
                                       context,
@@ -467,7 +467,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   },
                                 ),
                                 popularRestaurantLst.isEmpty
-                                    ? showEmptyState('No Popular restaurant'.tr(), context)
+                                    ? showEmptyState('No se encontraron restaurantes populares'.tr(), context)
                                     : Container(
                                         width: MediaQuery.of(context).size.width,
                                         height: 260,
@@ -717,12 +717,12 @@ class _HomeScreenState extends State<HomeScreen> {
                               },
                             ),
                             buildTitleRow(
-                              titleValue: "All Restaurant".tr(),
+                              titleValue: "Todos los Restaurantes".tr(),
                               onClick: () {},
                               isViewAll: true,
                             ),
                             vendors.isEmpty
-                                ? showEmptyState('No Vendors'.tr(), context)
+                                ? showEmptyState('Nada por mostrar'.tr(), context)
                                 : Container(
                                     width: MediaQuery.of(context).size.width,
                                     margin: const EdgeInsets.fromLTRB(10, 0, 0, 10),
@@ -754,7 +754,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                       ),
                                     ),
                                     child: Text(
-                                      'See All restaurant around you'.tr(),
+                                      'Encuentra restaurantes cercanos a ti'.tr(),
                                       style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 16, color: Colors.white),
                                     ).tr(),
                                     onPressed: () {
@@ -2296,7 +2296,7 @@ class buildTitleRow extends StatelessWidget {
                       onTap: () {
                         onClick!.call();
                       },
-                      child: Text('View All'.tr(), style: TextStyle(color: Color(COLOR_PRIMARY), fontFamily: "Poppinsm")),
+                      child: Text('Ver más'.tr(), style: TextStyle(color: Color(COLOR_PRIMARY), fontFamily: "Poppinsm")),
                     ),
             ],
           ),

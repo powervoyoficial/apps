@@ -33,7 +33,7 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
                 child: Padding(
                   padding: const EdgeInsets.only(top: 32.0, right: 16.0, left: 16.0),
                   child: Text(
-                    'Reset Password',
+                    'Resetear Contraseña',
                     style: TextStyle(color: Color(COLOR_PRIMARY), fontSize: 25.0, fontWeight: FontWeight.bold),
                   ).tr(),
                 ),
@@ -91,7 +91,7 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
                     ),
                     onPressed: () => resetPassword(),
                     child: Text(
-                      'Send Link'.tr(),
+                      'Enviar Link'.tr(),
                       style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
@@ -117,7 +117,7 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text(
-            'Please check your email.'.tr(),
+            'Por favor revisa tu email.'.tr(),
           ),
         ),
       );

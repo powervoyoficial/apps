@@ -67,12 +67,12 @@ class _SignUpState extends State<SignUpScreen> {
   _onCameraClick() {
     final action = CupertinoActionSheet(
       message: Text(
-        'Add profile picture',
+        'Añade una imagen de perfil',
         style: TextStyle(fontSize: 15.0),
       ).tr(),
       actions: <Widget>[
         CupertinoActionSheetAction(
-          child: Text('Choose from gallery').tr(),
+          child: Text('Elegir de tu galería').tr(),
           isDefaultAction: false,
           onPressed: () async {
             Navigator.pop(context);
@@ -84,7 +84,7 @@ class _SignUpState extends State<SignUpScreen> {
           },
         ),
         CupertinoActionSheetAction(
-          child: Text('Take a picture').tr(),
+          child: Text('Tomar foto').tr(),
           isDestructiveAction: false,
           onPressed: () async {
             Navigator.pop(context);
@@ -97,7 +97,7 @@ class _SignUpState extends State<SignUpScreen> {
         )
       ],
       cancelButton: CupertinoActionSheetAction(
-        child: Text('cancel').tr(),
+        child: Text('Cancelar').tr(),
         onPressed: () {
           Navigator.pop(context);
         },
@@ -112,7 +112,7 @@ class _SignUpState extends State<SignUpScreen> {
         Align(
             alignment: Directionality.of(context) == TextDirection.ltr ? Alignment.topLeft : Alignment.topRight,
             child: Text(
-              'Create new account',
+              'Crear nueva cuenta',
               style: TextStyle(color: Color(COLOR_PRIMARY), fontWeight: FontWeight.bold, fontSize: 25.0),
             ).tr()),
         Padding(
@@ -169,7 +169,7 @@ class _SignUpState extends State<SignUpScreen> {
               decoration: InputDecoration(
                 contentPadding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                 fillColor: Colors.white,
-                hintText: easyLocal.tr('First Name'),
+                hintText: easyLocal.tr('Primer nombre'),
                 focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(25.0), borderSide: BorderSide(color: Color(COLOR_PRIMARY), width: 2.0)),
                 errorBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Theme.of(context).errorColor),
@@ -202,7 +202,7 @@ class _SignUpState extends State<SignUpScreen> {
               decoration: InputDecoration(
                 contentPadding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                 fillColor: Colors.white,
-                hintText: 'Last Name'.tr(),
+                hintText: 'Apellidos'.tr(),
                 focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(25.0), borderSide: BorderSide(color: Color(COLOR_PRIMARY), width: 2.0)),
                 errorBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Theme.of(context).errorColor),
@@ -236,7 +236,7 @@ class _SignUpState extends State<SignUpScreen> {
               decoration: InputDecoration(
                 contentPadding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                 fillColor: Colors.white,
-                hintText: 'Email Address'.tr(),
+                hintText: 'Email'.tr(),
                 focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(25.0), borderSide: BorderSide(color: Color(COLOR_PRIMARY), width: 2.0)),
                 errorBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Theme.of(context).errorColor),
@@ -267,7 +267,7 @@ class _SignUpState extends State<SignUpScreen> {
               ignoreBlank: true,
               autoValidateMode: AutovalidateMode.onUserInteraction,
               inputDecoration: InputDecoration(
-                hintText: 'Phone Number'.tr(),
+                hintText: 'Teléfono'.tr(),
                 border: const OutlineInputBorder(
                   borderSide: BorderSide.none,
                 ),
@@ -279,7 +279,7 @@ class _SignUpState extends State<SignUpScreen> {
               inputBorder: const OutlineInputBorder(
                 borderSide: BorderSide.none,
               ),
-              initialValue: PhoneNumber(isoCode: 'US'),
+              initialValue: PhoneNumber(isoCode: 'MX'),
               selectorConfig: const SelectorConfig(selectorType: PhoneInputSelectorType.DIALOG),
             ),
           ),
@@ -302,7 +302,7 @@ class _SignUpState extends State<SignUpScreen> {
               decoration: InputDecoration(
                 contentPadding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                 fillColor: Colors.white,
-                hintText: 'Password'.tr(),
+                hintText: 'Contraseña'.tr(),
                 focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(25.0), borderSide: BorderSide(color: Color(COLOR_PRIMARY), width: 2.0)),
                 errorBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Theme.of(context).errorColor),
@@ -338,7 +338,7 @@ class _SignUpState extends State<SignUpScreen> {
               decoration: InputDecoration(
                 contentPadding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                 fillColor: Colors.white,
-                hintText: 'Confirm Password'.tr(),
+                hintText: 'Confirmar Contraseña'.tr(),
                 focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(25.0), borderSide: BorderSide(color: Color(COLOR_PRIMARY), width: 2.0)),
                 errorBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Theme.of(context).errorColor),
@@ -372,7 +372,7 @@ class _SignUpState extends State<SignUpScreen> {
               decoration: InputDecoration(
                 contentPadding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                 fillColor: Colors.white,
-                hintText: 'Referral Code (Optional)'.tr(),
+                hintText: 'Código de referencia (Opcional)'.tr(),
                 focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(25.0), borderSide: BorderSide(color: Color(COLOR_PRIMARY), width: 2.0)),
                 errorBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Theme.of(context).errorColor),
@@ -405,7 +405,7 @@ class _SignUpState extends State<SignUpScreen> {
                 ),
               ),
               child: Text(
-                'Sign Up'.tr(),
+                'Registrarme'.tr(),
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
@@ -420,7 +420,7 @@ class _SignUpState extends State<SignUpScreen> {
           padding: const EdgeInsets.all(32.0),
           child: Center(
             child: Text(
-              'or',
+              'o',
               style: TextStyle(color: isDarkMode(context) ? Colors.white : Colors.black),
             ).tr(),
           ),
@@ -430,7 +430,7 @@ class _SignUpState extends State<SignUpScreen> {
             push(context, PhoneNumberInputScreen(login: false));
           },
           child: Padding(
-            padding: EdgeInsets.only(top: 10, right: 40, left: 40),
+            padding: EdgeInsets.only(top: 10, right: 36, left: 36),
             child: Container(
                 alignment: Alignment.bottomCenter,
                 padding: EdgeInsets.all(10),
@@ -440,7 +440,7 @@ class _SignUpState extends State<SignUpScreen> {
                     Icons.phone,
                     color: Color(COLOR_PRIMARY),
                   ),
-                  Text("Sign Up With Phone Number".tr(),
+                  Text("Registrar Con Número Telefónico".tr(),
                     style: TextStyle(color: Color(COLOR_PRIMARY), fontWeight: FontWeight.bold, letterSpacing: 1),
                   ),
                 ])),
@@ -470,7 +470,7 @@ class _SignUpState extends State<SignUpScreen> {
           }else{
             final snack = SnackBar(
               content: Text(
-                'Referral Code is Invalid'.tr(),
+                'Código de Referencia Inválido'.tr(),
                 style: TextStyle(color: Colors.white),
               ),
               duration: Duration(seconds: 2),
@@ -492,16 +492,16 @@ class _SignUpState extends State<SignUpScreen> {
   }
 
   _signUpWithEmailAndPassword() async {
-    await showProgress(context, "Creating new account, Please wait...".tr(), false);
+    await showProgress(context, "Creando nueva cuenta, Espere por favor...".tr(), false);
     dynamic result = await FireStoreUtils.firebaseSignUpWithEmailAndPassword(email!.trim(), password!.trim(), _image, firstName!, lastName!, mobile!, context,referralCode.toString());
     await hideProgress();
     if (result != null && result is User) {
       MyAppState.currentUser = result;
       pushAndRemoveUntil(context, ContainerScreen(user: result), false);
     } else if (result != null && result is String) {
-      showAlertDialog(context, 'failed'.tr(), result, true);
+      showAlertDialog(context, 'Fallido'.tr(), result, true);
     } else {
-      showAlertDialog(context, 'failed'.tr(), "Couldn't sign up".tr(), true);
+      showAlertDialog(context, 'Fallido'.tr(), "No se realizó el Registro".tr(), true);
     }
   }
 }

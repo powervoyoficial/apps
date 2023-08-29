@@ -20,7 +20,7 @@ class AuthScreen extends StatelessWidget {
                 right: 20.0, left: 20.0, top: 40, bottom: 20),
             child: TextButton(
               child: Text(
-                'Skip',
+                'Saltar',
                 style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
@@ -67,7 +67,7 @@ class AuthScreen extends StatelessWidget {
               padding: const EdgeInsets.only(
                   left: 16, top: 32, right: 16, bottom: 8),
               child: Text(
-                "Welcome to FOODIES",
+                "Bienvenido a POWERVOY",
                 textAlign: TextAlign.center,
                 style: TextStyle(
                     color: Color(COLOR_PRIMARY),
@@ -78,7 +78,7 @@ class AuthScreen extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 16),
               child: Text(
-                "Order food from restaurants around you and track food in real-time",
+                "Ordena tu comida favorita de restaurantes cercanos. ",
                 style: TextStyle(fontSize: 18),
                 textAlign: TextAlign.center,
               ).tr(),
@@ -99,7 +99,7 @@ class AuthScreen extends StatelessWidget {
                     ),
                   ),
                   child: Text(
-                    "Log In",
+                    "Iniciar Sesión",
                     style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
@@ -118,7 +118,7 @@ class AuthScreen extends StatelessWidget {
                 constraints: const BoxConstraints(minWidth: double.infinity),
                 child: TextButton(
                   child: Text(
-                    "Sign Up",
+                    "Registrarse",
                     style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,

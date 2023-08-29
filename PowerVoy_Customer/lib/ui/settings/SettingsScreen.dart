@@ -49,7 +49,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'settings',
+          'Configuraciones',
           style: TextStyle(
             color: isDarkMode(context) ? Colors.white : Colors.black,
           ),
