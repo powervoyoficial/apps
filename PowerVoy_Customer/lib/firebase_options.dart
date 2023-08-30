@@ -63,7 +63,7 @@ class DefaultFirebaseOptions {
     apiKey: 'Place your key',
     appId: 'Place your key',
     messagingSenderId: 'Place your key',
-    projectId: 'Place your key',
+    projectId: 'powervoy-14128',
     storageBucket: 'Place your key',
   );
 

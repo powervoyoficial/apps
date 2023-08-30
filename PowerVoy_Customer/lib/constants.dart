@@ -48,7 +48,7 @@ const ORDERS_TABLE = 'booked_table';
 const SECOND_MILLIS = 1000;
 const MINUTE_MILLIS = 60 * SECOND_MILLIS;
 const HOUR_MILLIS = 60 * MINUTE_MILLIS;
-const SERVER_KEY = 'Replace with your Server key';
+const SERVER_KEY = 'AAAAliZZXvc:APA91bFHNxdmcs1h1wcj7maoIvrGT8ZTLltdjmqqtZrwVv3YZ4Da1bDgO29ZeA51encyZEgMtDc9LaWkV3WSZIjvgCk3QRN837FvSZCCsrWipxFN_7MQx92LC1IfPJZiOkcndPJek28A';
 String GOOGLE_API_KEY = '';
 
 const ORDER_STATUS_PLACED = 'Order Placed';
@@ -83,7 +83,7 @@ const newOrderPlaced = "new_order_placed";
 
 const COD = 'CODSettings';
 
-const GlobalURL = "Replace with your web";
+const GlobalURL = "https://powervoy.com/";
 
 const scheduleOrder = "schedule_order";
 const dineInPlaced = "dinein_placed";
