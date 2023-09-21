@@ -9,6 +9,11 @@
       "language": "Arebic",
       "icon": "assets/flags/ic_uae.png",
       "languageCode": "ar"
+    },
+    {
+      "language": "Spanish",
+      "icon": "assets/flags/ic_spain.png",
+      "languageCode": "es"
     }
   ]
 }

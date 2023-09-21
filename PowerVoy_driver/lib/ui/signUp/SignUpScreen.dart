@@ -75,12 +75,12 @@ class _SignUpState extends State<SignUpScreen> {
     isUserImage = isUserImage;
     final action = CupertinoActionSheet(
       message: Text(
-        isUserImage ? 'Add profile picture'.tr() : 'Add Car Image'.tr(),
+        isUserImage ? 'Añade una imagen de perfil'.tr() : 'Añade una imagen de tu auto'.tr(),
         style: TextStyle(fontSize: 15.0),
       ).tr(),
       actions: <Widget>[
         CupertinoActionSheetAction(
-          child: Text('Choose from gallery').tr(),
+          child: Text('Elige desde tu galería').tr(),
           isDefaultAction: false,
           onPressed: () async {
             Navigator.pop(context);
@@ -92,7 +92,7 @@ class _SignUpState extends State<SignUpScreen> {
           },
         ),
         CupertinoActionSheetAction(
-          child: Text('Take a picture').tr(),
+          child: Text('Toma una captura').tr(),
           isDestructiveAction: false,
           onPressed: () async {
             Navigator.pop(context);
@@ -104,7 +104,7 @@ class _SignUpState extends State<SignUpScreen> {
           },
         ),
         CupertinoActionSheetAction(
-          child: Text('Remove picture').tr(),
+          child: Text('Quitar imagen').tr(),
           isDestructiveAction: true,
           onPressed: () async {
             Navigator.pop(context);
@@ -115,7 +115,7 @@ class _SignUpState extends State<SignUpScreen> {
         )
       ],
       cancelButton: CupertinoActionSheetAction(
-        child: Text('Cancel').tr(),
+        child: Text('Cancelar').tr(),
         onPressed: () {
           Navigator.pop(context);
         },
@@ -130,7 +130,7 @@ class _SignUpState extends State<SignUpScreen> {
         Align(
             alignment: Directionality.of(context) == TextDirection.ltr ? Alignment.topLeft : Alignment.topRight,
             child: Text(
-              'Create new account',
+              'Crear nueva cuenta',
               style: TextStyle(color: Color(COLOR_PRIMARY), fontWeight: FontWeight.bold, fontSize: 25.0),
             ).tr()),
         Padding(
@@ -235,7 +235,7 @@ class _SignUpState extends State<SignUpScreen> {
               decoration: InputDecoration(
                 contentPadding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                 fillColor: Colors.white,
-                hintText: easyLocal.tr('First Name'),
+                hintText: easyLocal.tr('Primer nombre'),
                 focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(25.0), borderSide: BorderSide(color: Color(COLOR_PRIMARY), width: 2.0)),
                 errorBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Theme.of(context).errorColor),
@@ -268,7 +268,7 @@ class _SignUpState extends State<SignUpScreen> {
               decoration: InputDecoration(
                 contentPadding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                 fillColor: Colors.white,
-                hintText: 'Last Name'.tr(),
+                hintText: 'Apellido'.tr(),
                 focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(25.0), borderSide: BorderSide(color: Color(COLOR_PRIMARY), width: 2.0)),
                 errorBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Theme.of(context).errorColor),
@@ -301,7 +301,7 @@ class _SignUpState extends State<SignUpScreen> {
               decoration: InputDecoration(
                 contentPadding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                 fillColor: Colors.white,
-                hintText: 'Car Model'.tr(),
+                hintText: 'Modelo de vehículo'.tr(),
                 focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(25.0), borderSide: BorderSide(color: Color(COLOR_PRIMARY), width: 2.0)),
                 errorBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Theme.of(context).errorColor),
@@ -334,7 +334,7 @@ class _SignUpState extends State<SignUpScreen> {
               decoration: InputDecoration(
                 contentPadding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                 fillColor: Colors.white,
-                hintText: 'Car Plate'.tr(),
+                hintText: 'Placas de vehículo'.tr(),
                 focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(25.0), borderSide: BorderSide(color: Color(COLOR_PRIMARY), width: 2.0)),
                 errorBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Theme.of(context).errorColor),
@@ -368,7 +368,7 @@ class _SignUpState extends State<SignUpScreen> {
                     decoration: InputDecoration(
                         contentPadding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                         fillColor: Colors.white,
-                        hintText: 'Email Address'.tr(),
+                        hintText: 'Email'.tr(),
                         focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(25.0), borderSide: BorderSide(color: Color(COLOR_PRIMARY), width: 2.0)),
                         errorBorder: OutlineInputBorder(
                           borderSide: BorderSide(color: Theme.of(context).errorColor),
@@ -385,7 +385,7 @@ class _SignUpState extends State<SignUpScreen> {
               ignoreBlank: true,
               autoValidateMode: AutovalidateMode.onUserInteraction,
               inputDecoration: InputDecoration(
-                hintText: 'phoneNumber'.tr(),
+                hintText: 'Número telefónico'.tr(),
                 border: const OutlineInputBorder(
                   borderSide: BorderSide.none,
                 ),
@@ -397,7 +397,7 @@ class _SignUpState extends State<SignUpScreen> {
               inputBorder: const OutlineInputBorder(
                 borderSide: BorderSide.none,
               ),
-              initialValue: PhoneNumber(isoCode: 'US'),
+              initialValue: PhoneNumber(isoCode: 'MX'),
               selectorConfig: const SelectorConfig(selectorType: PhoneInputSelectorType.DIALOG),
             ),
           ),
@@ -456,7 +456,7 @@ class _SignUpState extends State<SignUpScreen> {
               decoration: InputDecoration(
                 contentPadding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                 fillColor: Colors.white,
-                hintText: 'Confirm Password'.tr(),
+                hintText: 'Confirmar Password'.tr(),
                 focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(25.0), borderSide: BorderSide(color: Color(COLOR_PRIMARY), width: 2.0)),
                 errorBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Theme.of(context).errorColor),
@@ -490,7 +490,7 @@ class _SignUpState extends State<SignUpScreen> {
                 ),
               ),
               child: Text(
-                'Sign Up'.tr(),
+                'Registrar'.tr(),
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
@@ -505,7 +505,7 @@ class _SignUpState extends State<SignUpScreen> {
           padding: const EdgeInsets.all(32.0),
           child: Center(
             child: Text(
-              'OR',
+              'O',
               style: TextStyle(color: isDarkMode(context) ? Colors.white : Colors.black),
             ).tr(),
           ),
@@ -550,7 +550,7 @@ class _SignUpState extends State<SignUpScreen> {
   }
 
   _signUpWithEmailAndPassword() async {
-    await showProgress(context, 'Creating new account, Please wait...'.tr(), false);
+    await showProgress(context, 'Creando nueva cuenta, espere...'.tr(), false);
     dynamic result = await FireStoreUtils.firebaseSignUpWithEmailAndPassword(email!.trim(), password!.trim(), _image, _carImage, carName!, carPlate!, firstName!, lastName!, mobile!);
     await hideProgress();
     if (result != null && result is User) {

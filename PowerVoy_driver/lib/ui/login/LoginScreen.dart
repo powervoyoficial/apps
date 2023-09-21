@@ -41,7 +41,7 @@ class _LoginScreen extends State<LoginScreen> {
             Padding(
               padding: const EdgeInsets.only(top: 32.0, right: 16.0, left: 16.0),
               child: Text(
-                'Log In'.tr(),
+                'Iniciar sesión'.tr(),
                 style: TextStyle(color: Color(COLOR_PRIMARY), fontSize: 25.0, fontWeight: FontWeight.bold),
               ),
             ),
@@ -62,7 +62,7 @@ class _LoginScreen extends State<LoginScreen> {
                     cursorColor: Color(COLOR_PRIMARY),
                     decoration: InputDecoration(
                       contentPadding: EdgeInsets.only(left: 16, right: 16),
-                      hintText: 'Email Address'.tr(),
+                      hintText: 'Email'.tr(),
                       focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(25.0), borderSide: BorderSide(color: Color(COLOR_PRIMARY), width: 2.0)),
                       errorBorder: OutlineInputBorder(
@@ -98,7 +98,7 @@ class _LoginScreen extends State<LoginScreen> {
                     cursorColor: Color(COLOR_PRIMARY),
                     decoration: InputDecoration(
                       contentPadding: EdgeInsets.only(left: 16, right: 16),
-                      hintText: 'Password'.tr(),
+                      hintText: 'Contraseña'.tr(),
                       focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(25.0), borderSide: BorderSide(color: Color(COLOR_PRIMARY), width: 2.0)),
                       errorBorder: OutlineInputBorder(
@@ -126,7 +126,7 @@ class _LoginScreen extends State<LoginScreen> {
                 child: GestureDetector(
                   onTap: () => push(context, ResetPasswordScreen()),
                   child: Text(
-                    'Forgot password?'.tr(),
+                    'Olvidaste tu contraseña?'.tr(),
                     style: TextStyle(color: Colors.lightBlue, fontWeight: FontWeight.bold, fontSize: 15, letterSpacing: 1),
                   ),
                 ),
@@ -156,7 +156,7 @@ class _LoginScreen extends State<LoginScreen> {
                     ),
                   ),
                   child: Text(
-                    'Log In'.tr(),
+                    'Iniciar sesión'.tr(),
                     style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
@@ -171,7 +171,7 @@ class _LoginScreen extends State<LoginScreen> {
               padding: const EdgeInsets.all(32.0),
               child: Center(
                 child: Text(
-                  'OR',
+                  'O',
                   style: TextStyle(color: isDarkMode(context) ? Colors.white : Colors.black),
                 ).tr(),
               ),
@@ -282,7 +282,7 @@ class _LoginScreen extends State<LoginScreen> {
   /// @param email user email
   /// @param password user password
   _loginWithEmailAndPassword(String email, String password) async {
-    await showProgress(context, 'Logging in, please wait...'.tr(), false);
+    await showProgress(context, 'Iniciando sesión, espera...'.tr(), false);
     dynamic result = await FireStoreUtils.loginWithEmailAndPassword(email.trim(), password.trim());
     await hideProgress();
     if (result != null && result is User && result.role == USER_ROLE_DRIVER) {
@@ -291,7 +291,7 @@ class _LoginScreen extends State<LoginScreen> {
         MyAppState.currentUser = result;
         pushAndRemoveUntil(context, ContainerScreen(user: result), false);
       } else {
-        showAlertDialog(context, "notLogIn".tr(), 'User not activated yet.'.tr(), true);
+        showAlertDialog(context, "notLogIn".tr(), 'Usuario no activado todavía.'.tr(), true);
       }
     } else if (result != null && result is String) {
       showAlertDialog(context, "notAuthenticate".tr(), result, true);

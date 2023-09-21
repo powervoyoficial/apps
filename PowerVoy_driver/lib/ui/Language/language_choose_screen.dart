@@ -19,7 +19,7 @@ class LanguageChooseScreen extends StatefulWidget {
 
 class _LanguageChooceScreenState extends State<LanguageChooseScreen> {
   var languageList = <Data>[];
-  String selectedLanguage = "en";
+  String selectedLanguage = "es";
 
   @override
   void initState() {
@@ -136,7 +136,7 @@ class _LanguageChooceScreenState extends State<LanguageChooseScreen> {
               ),
             ),
             onPressed: () async {
-              if (selectedLanguage == "en") {
+              if (selectedLanguage == "es") {
                 SharedPreferences sp = await SharedPreferences.getInstance();
                 sp.setString("languageCode", selectedLanguage);
                 context.setLocale(Locale(selectedLanguage));
@@ -146,8 +146,8 @@ class _LanguageChooceScreenState extends State<LanguageChooseScreen> {
                 context.setLocale(Locale(selectedLanguage));
               } else {
                 SharedPreferences sp = await SharedPreferences.getInstance();
-                sp.setString("languageCode", "en");
-                context.setLocale(Locale("en"));
+                sp.setString("languageCode", "es");
+                context.setLocale(Locale("es"));
               }
 
               if (widget.isContainer) {

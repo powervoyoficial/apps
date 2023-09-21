@@ -270,7 +270,7 @@ class _ContainerScreen extends State<ContainerScreen> {
                           width: 24,
                           height: 24,
                         ),
-                        title: Text('Orders').tr(),
+                        title: Text('Órdenes').tr(),
                         onTap: () {
                           Navigator.pop(context);
                           setState(() {
@@ -307,7 +307,7 @@ class _ContainerScreen extends State<ContainerScreen> {
                       child: ListTile(
                         selected: _drawerSelection == DrawerSelection.BankInfo,
                         leading: Icon(Icons.account_balance),
-                        title: Text('Bank Details').tr(),
+                        title: Text('Detalles de banco').tr(),
                         onTap: () {
                           Navigator.pop(context);
                           setState(() {
@@ -324,12 +324,12 @@ class _ContainerScreen extends State<ContainerScreen> {
                       child: ListTile(
                         selected: _drawerSelection == DrawerSelection.Profile,
                         leading: Icon(CupertinoIcons.person),
-                        title: Text('Profile').tr(),
+                        title: Text('Perfil').tr(),
                         onTap: () {
                           Navigator.pop(context);
                           setState(() {
                             _drawerSelection = DrawerSelection.Profile;
-                            _appBarTitle = 'My Profile'.tr();
+                            _appBarTitle = 'Mi perfil'.tr();
                             _currentWidget = ProfileScreen(
                               user: user,
                             );
@@ -355,7 +355,7 @@ class _ContainerScreen extends State<ContainerScreen> {
                           Navigator.pop(context);
                           setState(() {
                             _drawerSelection = DrawerSelection.chooseLanguage;
-                            _appBarTitle = 'Language'.tr();
+                            _appBarTitle = 'Lenguaje'.tr();
                             _currentWidget = LanguageChooseScreen(
                               isContainer: true,
                             );
@@ -391,7 +391,7 @@ class _ContainerScreen extends State<ContainerScreen> {
                       child: ListTile(
                         selected: _drawerSelection == DrawerSelection.termsCondition,
                         leading: const Icon(Icons.policy),
-                        title: const Text('Terms and Condition').tr(),
+                        title: const Text('Términos y condiciones').tr(),
                         onTap: () async {
                           push(context, const TermsAndCondition());
                         },
@@ -403,7 +403,7 @@ class _ContainerScreen extends State<ContainerScreen> {
                       child: ListTile(
                         selected: _drawerSelection == DrawerSelection.privacyPolicy,
                         leading: const Icon(Icons.privacy_tip),
-                        title: const Text('Privacy policy').tr(),
+                        title: const Text('Política de privacidad').tr(),
                         onTap: () async {
                           push(context, const PrivacyPolicyScreen());
                         },
@@ -415,7 +415,7 @@ class _ContainerScreen extends State<ContainerScreen> {
                       child: ListTile(
                         selected: _drawerSelection == DrawerSelection.Logout,
                         leading: Icon(Icons.logout),
-                        title: Text('Log out').tr(),
+                        title: Text('Salir de la sesión').tr(),
                         onTap: () async {
                           audioPlayer.stop();
                           Navigator.pop(context);

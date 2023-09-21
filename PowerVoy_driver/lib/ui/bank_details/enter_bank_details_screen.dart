@@ -58,7 +58,7 @@ class _EnterBankDetailScreenState extends State<EnterBankDetailScreen> {
             ),
           ),
           title: Text(
-            widget.isNewAccount ? "Add Bank".tr() : "Edit Bank".tr(),
+            widget.isNewAccount ? " Añadir banco".tr() : "Editar banco".tr(),
             style: TextStyle(color: isDarkMode(context) ? Colors.white : Colors.black),
           ),
         ),
@@ -75,16 +75,16 @@ class _EnterBankDetailScreenState extends State<EnterBankDetailScreen> {
                   SizedBox(
                     height: 30,
                   ),
-                  buildTextFiled(validator: validateName, title: "Bank Name".tr(), controller: bankNameController),
-                  buildTextFiled(validator: validateOthers, title: "Branch Name".tr(), controller: branchNameController),
-                  buildTextFiled(validator: validateOthers, title: "Holder Name".tr(), controller: holderNameController),
-                  buildTextFiled(validator: validateOthers, title: "Account Number".tr(), controller: accountNoController),
+                  buildTextFiled(validator: validateName, title: "Nombre de banco".tr(), controller: bankNameController),
+                  buildTextFiled(validator: validateOthers, title: "Sucursal de banco".tr(), controller: branchNameController),
+                  buildTextFiled(validator: validateOthers, title: "Nombre de titular".tr(), controller: holderNameController),
+                  buildTextFiled(validator: validateOthers, title: "Número de cuenta".tr(), controller: accountNoController),
                   buildTextFiled(validator: (String? value) {
                     return null;
                   }, title: "Other Information".tr(), controller: otherInfoController),
                   Padding(
                     padding: const EdgeInsets.only(top: 45.0, bottom: 25),
-                    child: buildButton(context, title: widget.isNewAccount ? "Add Bank".tr() : "Edit Bank".tr(), onPress: () async {
+                    child: buildButton(context, title: widget.isNewAccount ? "Añadir banco".tr() : "Editar banco".tr(), onPress: () async {
                       if (_bankDetailFormKey.currentState!.validate()) {
                         print("----<");
                         user!.userBankDetails.accountNumber = accountNoController.text;
@@ -100,7 +100,7 @@ class _EnterBankDetailScreenState extends State<EnterBankDetailScreen> {
                           MyAppState.currentUser = updatedUser;
                           ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                               content: Text(
-                            'Bank Details saved successfully'.tr(),
+                            'Detalles de banco guardados exitósamente'.tr(),
                             style: TextStyle(fontSize: 17),
                           ).tr()));
                           Navigator.pop(context, true);

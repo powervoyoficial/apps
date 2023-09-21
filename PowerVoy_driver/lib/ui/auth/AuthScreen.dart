@@ -19,14 +19,14 @@ class AuthScreen extends StatelessWidget {
               'assets/images/app_logo.png',
               // color: Color(COLOR_PRIMARY),
               fit: BoxFit.cover,
-              width: 150,
+              width: 220,
               height: 150,
             ),
           ),
           Padding(
             padding: const EdgeInsets.only(left: 16, top: 32, right: 16, bottom: 8),
             child: Text(
-              'Welcome to Foodies Driver'.tr(),
+              'Bienvenido a PowerVoy Delivery'.tr(),
               textAlign: TextAlign.center,
               style: TextStyle(color: Color(COLOR_PRIMARY), fontSize: 24.0, fontWeight: FontWeight.bold),
             ),
@@ -34,7 +34,7 @@ class AuthScreen extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 16),
             child: Text(
-              'Make extra cash by delivery orders to our customers.'.tr(),
+              'Gana dinero extra haciendo entregas a nuestros clientes.'.tr(),
               style: TextStyle(fontSize: 18),
               textAlign: TextAlign.center,
             ),
@@ -55,7 +55,7 @@ class AuthScreen extends StatelessWidget {
                   ),
                 ),
                 child: Text(
-                  'Log In'.tr(),
+                  'Inicia sesión'.tr(),
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
                 ),
                 onPressed: () {
@@ -79,7 +79,7 @@ class AuthScreen extends StatelessWidget {
                   ),
                 ),
                 child: Text(
-                  'Sign Up'.tr(),
+                  'Regístrate'.tr(),
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Color(COLOR_PRIMARY)),
                 ),
                 onPressed: () {

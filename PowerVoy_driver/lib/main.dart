@@ -50,7 +50,7 @@ void main() async {
   FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
   await UserPreference.init();
   runApp(
-    EasyLocalization(supportedLocales: [Locale('en'), Locale('ar')], path: 'assets/translations', fallbackLocale: Locale('en'), useOnlyLangCode: true, useFallbackTranslations: true, child: MyApp()),
+    EasyLocalization(supportedLocales: [Locale('es'), Locale('en')], path: 'assets/translations', fallbackLocale: Locale('es'), useOnlyLangCode: true, useFallbackTranslations: true, child: MyApp()),
   );
 }
 

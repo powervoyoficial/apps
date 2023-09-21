@@ -45,27 +45,27 @@ class _BankDetailsScreenState extends State<BankDetailsScreen> {
               child: Column(
                 children: [
                   buildDetails(
-                    title: "Bank Name".tr(),
+                    title: "Nombre de banco".tr(),
                     icon: Icons.account_balance,
                     value: userBankDetails!.bankName,
                   ),
                   buildDetails(
-                    title: "Branch Name".tr(),
+                    title: "Sucursal de banco".tr(),
                     icon: Icons.account_balance,
                     value: userBankDetails!.branchName,
                   ),
                   buildDetails(
-                    title: "Holder Name".tr(),
+                    title: "Nombre de titular".tr(),
                     icon: Icons.person,
                     value: userBankDetails!.holderName,
                   ),
                   buildDetails(
-                    title: "Account Number".tr(),
+                    title: "Número de cuenta".tr(),
                     icon: Icons.credit_card,
                     value: userBankDetails!.accountNumber,
                   ),
                   buildDetails(
-                    title: "Other Information".tr(),
+                    title: "Otra información".tr(),
                     icon: Icons.info_rounded,
                     value: userBankDetails!.otherDetails,
                   ),
@@ -138,7 +138,7 @@ class _BankDetailsScreenState extends State<BankDetailsScreen> {
               padding: const EdgeInsets.only(top: 45.0, bottom: 25),
               child: buildButton(
                 context,
-                title: "ADD BANK".tr(),
+                title: "Añadir banco".tr(),
                 onPress: () => enterEditBankDetails(),
               ),
             ),

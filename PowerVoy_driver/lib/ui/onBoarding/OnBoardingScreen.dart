@@ -17,17 +17,17 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
   final List<String> _titlesList = [
     // easyLocal.tr('Welcome to FOODIES'),
     // 'Order Food'.tr(),
-    'Add Address'.tr(),
-    'Choose Your Favorite Food'.tr(),
-    'Fastest Delivery'.tr(),
+    'Añade tu dirección'.tr(),
+    'Elige tu comida favorita'.tr(),
+    'Entragas rápidas'.tr(),
   ];
 
   final List<String> _subtitlesList = [
     // 'Log in and order delicious food from restaurants around you.'.tr(),
     // 'Hungry? Order food in just a few clicks and we\'ll take care of you.'.tr(),
-    'Find perfect restaurant nearby or  place order at your favorite restaurant in few clicks.'.tr(),
-    'A diverse list of different dining restaurants throughout the territory and around your area carefully selected'.tr(),
-    'Get your favorite food fastest delivered at your doorstep'.tr(),
+    'Encuentre el restaurante perfecto cerca o haga un pedido en su restaurante favorito con unos pocos clics.'.tr(),
+    'Una lista diversa de diferentes restaurantes para cenar en todo el territorio y alrededor de su área cuidadosamente seleccionados.'.tr(),
+    'Obtenga su comida favorita más rápido entregada en su puerta'.tr(),
   ];
 
   final List<dynamic> _imageList = [

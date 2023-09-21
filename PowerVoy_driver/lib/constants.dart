@@ -11,7 +11,7 @@ LocationData? locationDataFinal;
 const COLOR_ACCENT = 0xFF8fd468;
 const COLOR_PRIMARY_DARK = 0xFF2c7305;
 // ignore: non_constant_identifier_names
-var COLOR_PRIMARY = 0xffFF683A;
+var COLOR_PRIMARY = 0xffE22B1D;
 const DARK_VIEWBG_COLOR = 0xff191A1C;
 const DARK_CARD_BG_COLOR = 0xff242528; // 0xFF5EA23A;
 const FACEBOOK_BUTTON_COLOR = 0xFF415893;
