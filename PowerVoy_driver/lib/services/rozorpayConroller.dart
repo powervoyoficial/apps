@@ -1,10 +1,10 @@
 import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
-import 'package:foodie_driver/constants.dart';
-import 'package:foodie_driver/model/createRazorPayOrderModel.dart';
-import 'package:foodie_driver/model/razorpayKeyModel.dart';
-import 'package:foodie_driver/userPrefrence.dart';
+import '/constants.dart';
+import '/model/createRazorPayOrderModel.dart';
+import '/model/razorpayKeyModel.dart';
+import '/userPrefrence.dart';
 import 'package:http/http.dart' as http;
 
 class RazorPayController {

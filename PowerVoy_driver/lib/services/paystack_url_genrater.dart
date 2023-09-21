@@ -1,9 +1,9 @@
 import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
-import 'package:foodie_driver/main.dart';
-import 'package:foodie_driver/model/PayFastSettingData.dart';
-import 'package:foodie_driver/model/payStackURLModel.dart';
+import '/main.dart';
+import '/model/PayFastSettingData.dart';
+import '/model/payStackURLModel.dart';
 import 'package:http/http.dart' as http;
 
 class PayStackURLGen {

@@ -1,6 +1,6 @@
-import 'package:foodie_driver/model/CurrencyModel.dart';
-import 'package:foodie_driver/model/TaxModel.dart';
-import 'package:foodie_driver/model/mail_setting.dart';
+import '/model/CurrencyModel.dart';
+import '/model/TaxModel.dart';
+import '/model/mail_setting.dart';
 import 'package:location/location.dart';
 import 'package:mailer/mailer.dart';
 import 'package:mailer/smtp_server.dart';

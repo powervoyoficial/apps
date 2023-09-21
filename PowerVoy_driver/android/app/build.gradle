@@ -37,7 +37,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.foodies.driver.android"
+        applicationId "com.app.powervoy.driver"
         minSdkVersion 26
         multiDexEnabled = true
         targetSdkVersion 31

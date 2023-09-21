@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:foodie_driver/model/DeliveryChargeModel.dart';
-import 'package:foodie_driver/model/SpecialDiscountModel.dart';
-import 'package:foodie_driver/model/WorkingHoursModel.dart';
+import '/model/DeliveryChargeModel.dart';
+import '/model/SpecialDiscountModel.dart';
+import '/model/WorkingHoursModel.dart';
 
 import '../constants.dart';
 

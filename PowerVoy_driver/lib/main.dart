@@ -9,15 +9,15 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:foodie_driver/constants.dart';
-import 'package:foodie_driver/model/mail_setting.dart';
-import 'package:foodie_driver/services/FirebaseHelper.dart';
-import 'package:foodie_driver/services/helper.dart';
-import 'package:foodie_driver/services/notification_service.dart';
-import 'package:foodie_driver/ui/auth/AuthScreen.dart';
-import 'package:foodie_driver/ui/container/ContainerScreen.dart';
-import 'package:foodie_driver/ui/onBoarding/OnBoardingScreen.dart';
-import 'package:foodie_driver/userPrefrence.dart';
+import '/constants.dart';
+import '/model/mail_setting.dart';
+import '/services/FirebaseHelper.dart';
+import '/services/helper.dart';
+import '/services/notification_service.dart';
+import '/ui/auth/AuthScreen.dart';
+import '/ui/container/ContainerScreen.dart';
+import '/ui/onBoarding/OnBoardingScreen.dart';
+import '/userPrefrence.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'model/User.dart';
@@ -72,7 +72,7 @@ class MyAppState extends State<MyApp> with WidgetsBindingObserver {
       if (currentUser != null) {
         await FireStoreUtils.getCurrentUser(currentUser!.userID).then((value) {
           if (value != null) {
-            currentUser = value;
+            currentUser = value as User?;
             currentUser!.fcmToken = token;
             FireStoreUtils.updateCurrentUser(currentUser!);
           }

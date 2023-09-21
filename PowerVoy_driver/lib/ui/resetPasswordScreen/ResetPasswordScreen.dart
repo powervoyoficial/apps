@@ -1,8 +1,8 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:firebase_auth/firebase_auth.dart' as auth;
 import 'package:flutter/material.dart';
-import 'package:foodie_driver/constants.dart';
-import 'package:foodie_driver/services/helper.dart';
+import '/constants.dart';
+import '/services/helper.dart';
 
 class ResetPasswordScreen extends StatefulWidget {
   @override

@@ -2,14 +2,14 @@ import 'dart:developer';
 
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:foodie_driver/constants.dart';
-import 'package:foodie_driver/main.dart';
-import 'package:foodie_driver/model/User.dart';
-import 'package:foodie_driver/services/FirebaseHelper.dart';
-import 'package:foodie_driver/services/helper.dart';
-import 'package:foodie_driver/ui/container/ContainerScreen.dart';
-import 'package:foodie_driver/ui/phoneAuth/PhoneNumberInputScreen.dart';
-import 'package:foodie_driver/ui/resetPasswordScreen/ResetPasswordScreen.dart';
+import '/constants.dart';
+import '/main.dart';
+import '/model/User.dart';
+import '/services/FirebaseHelper.dart';
+import '/services/helper.dart';
+import '/ui/container/ContainerScreen.dart';
+import '/ui/phoneAuth/PhoneNumberInputScreen.dart';
+import '/ui/resetPasswordScreen/ResetPasswordScreen.dart';
 import 'package:the_apple_sign_in/the_apple_sign_in.dart' as apple;
 
 class LoginScreen extends StatefulWidget {

@@ -1,7 +1,7 @@
 
 
-import 'package:foodie_driver/constants.dart';
-import 'package:foodie_driver/model/variant_info.dart';
+import '/constants.dart';
+import '/model/variant_info.dart';
 
 class OrderProductModel {
   dynamic extras;

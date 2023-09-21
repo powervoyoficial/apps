@@ -1,9 +1,9 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:foodie_driver/constants.dart';
-import 'package:foodie_driver/services/FirebaseHelper.dart';
-import 'package:foodie_driver/services/helper.dart';
+import '/constants.dart';
+import '/services/FirebaseHelper.dart';
+import '/services/helper.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class ContactUsScreen extends StatefulWidget {

@@ -10,19 +10,19 @@
 // import 'package:image_picker/image_picker.dart';
 // import 'package:path_provider/path_provider.dart';
 // import 'package:permission_handler/permission_handler.dart';
-// import 'package:foodie_driver/constants.dart';
-// import 'package:foodie_driver/main.dart';
-// import 'package:foodie_driver/model/ChatModel.dart';
-// import 'package:foodie_driver/model/ChatVideoContainer.dart';
-// import 'package:foodie_driver/model/ConversationModel.dart';
-// import 'package:foodie_driver/model/HomeConversationModel.dart';
-// import 'package:foodie_driver/model/MessageData.dart';
-// import 'package:foodie_driver/model/User.dart';
-// import 'package:foodie_driver/services/FirebaseHelper.dart';
-// import 'package:foodie_driver/services/helper.dart';
-// import 'package:foodie_driver/ui/chat/PlayerWidget.dart';
-// import 'package:foodie_driver/ui/fullScreenImageViewer/FullScreenImageViewer.dart';
-// import 'package:foodie_driver/ui/fullScreenVideoViewer/FullScreenVideoViewer.dart';
+// import '/constants.dart';
+// import '/main.dart';
+// import '/model/ChatModel.dart';
+// import '/model/ChatVideoContainer.dart';
+// import '/model/ConversationModel.dart';
+// import '/model/HomeConversationModel.dart';
+// import '/model/MessageData.dart';
+// import '/model/User.dart';
+// import '/services/FirebaseHelper.dart';
+// import '/services/helper.dart';
+// import '/ui/chat/PlayerWidget.dart';
+// import '/ui/fullScreenImageViewer/FullScreenImageViewer.dart';
+// import '/ui/fullScreenVideoViewer/FullScreenVideoViewer.dart';
 // import 'package:uuid/uuid.dart';
 //
 // enum RecordingState { HIDDEN, VISIBLE, Recording }

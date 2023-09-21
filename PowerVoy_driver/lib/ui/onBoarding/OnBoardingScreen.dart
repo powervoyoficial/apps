@@ -1,9 +1,9 @@
 import 'package:easy_localization/easy_localization.dart' as easyLocal;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:foodie_driver/constants.dart';
-import 'package:foodie_driver/services/helper.dart';
-import 'package:foodie_driver/ui/auth/AuthScreen.dart';
+import '/constants.dart';
+import '/services/helper.dart';
+import '/ui/auth/AuthScreen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 

@@ -6,16 +6,16 @@ import 'package:firebase_auth/firebase_auth.dart' as auth;
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:foodie_driver/constants.dart';
-import 'package:foodie_driver/main.dart';
-import 'package:foodie_driver/model/User.dart';
-import 'package:foodie_driver/services/FirebaseHelper.dart';
-import 'package:foodie_driver/services/helper.dart';
-import 'package:foodie_driver/ui/accountDetails/AccountDetailsScreen.dart';
-import 'package:foodie_driver/ui/auth/AuthScreen.dart';
-import 'package:foodie_driver/ui/contactUs/ContactUsScreen.dart';
-import 'package:foodie_driver/ui/reauthScreen/reauth_user_screen.dart';
-import 'package:foodie_driver/ui/settings/SettingsScreen.dart';
+import '/constants.dart';
+import '/main.dart';
+import '/model/User.dart';
+import '/services/FirebaseHelper.dart';
+import '/services/helper.dart';
+import '/ui/accountDetails/AccountDetailsScreen.dart';
+import '/ui/auth/AuthScreen.dart';
+import '/ui/contactUs/ContactUsScreen.dart';
+import '/ui/reauthScreen/reauth_user_screen.dart';
+import '/ui/settings/SettingsScreen.dart';
 
 class ProfileScreen extends StatefulWidget {
   final User user;

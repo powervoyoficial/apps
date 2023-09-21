@@ -1,8 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:foodie_driver/model/AddressModel.dart';
-import 'package:foodie_driver/model/OrderProductModel.dart';
-import 'package:foodie_driver/model/User.dart';
-import 'package:foodie_driver/model/VendorModel.dart';
+import '/model/AddressModel.dart';
+import '/model/OrderProductModel.dart';
+import '/model/User.dart';
+import '/model/VendorModel.dart';
 
 import 'TaxModel.dart';
 

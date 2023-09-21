@@ -2,10 +2,10 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:firebase_auth/firebase_auth.dart' as auth;
 import 'package:flutter/material.dart';
 import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
-import 'package:foodie_driver/constants.dart';
-import 'package:foodie_driver/main.dart';
-import 'package:foodie_driver/services/FirebaseHelper.dart';
-import 'package:foodie_driver/services/helper.dart';
+import '/constants.dart';
+import '/main.dart';
+import '/services/FirebaseHelper.dart';
+import '/services/helper.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 import 'package:the_apple_sign_in/the_apple_sign_in.dart' as apple;
 

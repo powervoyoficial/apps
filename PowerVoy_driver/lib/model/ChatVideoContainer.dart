@@ -1,4 +1,4 @@
-import 'package:foodie_driver/model/conversation_model.dart';
+import '/model/conversation_model.dart';
 
 class ChatVideoContainer {
   Url videoUrl;

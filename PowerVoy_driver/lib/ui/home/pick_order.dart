@@ -1,10 +1,10 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:foodie_driver/constants.dart';
-import 'package:foodie_driver/model/OrderModel.dart';
-import 'package:foodie_driver/services/FirebaseHelper.dart';
-import 'package:foodie_driver/services/helper.dart';
+import '/constants.dart';
+import '/model/OrderModel.dart';
+import '/services/FirebaseHelper.dart';
+import '/services/helper.dart';
 
 class PickOrder extends StatefulWidget {
   final OrderModel? currentOrder;

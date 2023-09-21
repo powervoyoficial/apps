@@ -2,8 +2,8 @@ import 'dart:async';
 
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:foodie_driver/constants.dart';
-import 'package:foodie_driver/services/paystack_url_genrater.dart';
+import '/constants.dart';
+import '/services/paystack_url_genrater.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class PayStackScreen extends StatefulWidget {

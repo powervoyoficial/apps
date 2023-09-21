@@ -1,9 +1,9 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:foodie_driver/constants.dart';
-import 'package:foodie_driver/services/helper.dart';
-import 'package:foodie_driver/ui/login/LoginScreen.dart';
-import 'package:foodie_driver/ui/signUp/SignUpScreen.dart';
+import '/constants.dart';
+import '/services/helper.dart';
+import '/ui/login/LoginScreen.dart';
+import '/ui/signUp/SignUpScreen.dart';
 
 class AuthScreen extends StatelessWidget {
   @override

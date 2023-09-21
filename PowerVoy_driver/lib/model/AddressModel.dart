@@ -1,4 +1,4 @@
-import 'package:foodie_driver/model/User.dart';
+import '/model/User.dart';
 
 class AddressModel {
   String city;

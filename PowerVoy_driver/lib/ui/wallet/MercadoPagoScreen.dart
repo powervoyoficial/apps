@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:foodie_driver/constants.dart';
+import '/constants.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class MercadoPagoScreen extends StatefulWidget {

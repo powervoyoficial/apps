@@ -1,10 +1,10 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:foodie_driver/constants.dart';
-import 'package:foodie_driver/main.dart';
-import 'package:foodie_driver/model/User.dart';
-import 'package:foodie_driver/services/FirebaseHelper.dart';
-import 'package:foodie_driver/services/helper.dart';
+import '/constants.dart';
+import '/main.dart';
+import '/model/User.dart';
+import '/services/FirebaseHelper.dart';
+import '/services/helper.dart';
 
 class EnterBankDetailScreen extends StatefulWidget {
   final bool isNewAccount;

@@ -1,10 +1,10 @@
 import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
-import 'package:foodie_driver/model/FlutterWaveSettingDataModel.dart';
-import 'package:foodie_driver/model/PayFastSettingData.dart';
-import 'package:foodie_driver/model/PayStackSettingsModel.dart';
-import 'package:foodie_driver/model/paytmSettingData.dart';
+import '/model/FlutterWaveSettingDataModel.dart';
+import '/model/PayFastSettingData.dart';
+import '/model/PayStackSettingsModel.dart';
+import '/model/paytmSettingData.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'model/MercadoPagoSettingsModel.dart';

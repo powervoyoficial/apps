@@ -3,13 +3,13 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterflow_paginate_firestore/paginate_firestore.dart';
-import 'package:foodie_driver/constants.dart';
-import 'package:foodie_driver/main.dart';
-import 'package:foodie_driver/model/User.dart';
-import 'package:foodie_driver/model/inbox_model.dart';
-import 'package:foodie_driver/services/FirebaseHelper.dart';
-import 'package:foodie_driver/services/helper.dart';
-import 'package:foodie_driver/ui/chat_screen/chat_screen.dart';
+import '/constants.dart';
+import '/main.dart';
+import '/model/User.dart';
+import '/model/inbox_model.dart';
+import '/services/FirebaseHelper.dart';
+import '/services/helper.dart';
+import '/ui/chat_screen/chat_screen.dart';
 
 class InboxScreen extends StatefulWidget {
   const InboxScreen({Key? key}) : super(key: key);
