@@ -49,9 +49,9 @@ void main() async {
 
   runApp(
     EasyLocalization(
-        supportedLocales: [Locale('en'), Locale('ar')],
+        supportedLocales: [Locale('es'), Locale('ar')],
         path: 'assets/translations',
-        fallbackLocale: Locale('en'),
+        fallbackLocale: Locale('es'),
         useFallbackTranslations: true,
         saveLocale: false,
         useOnlyLangCode: true,

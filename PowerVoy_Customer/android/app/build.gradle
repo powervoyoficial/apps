@@ -42,7 +42,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.foodies.customer.android"
+        applicationId "com.app.powervoy.customer"
         minSdkVersion 26
         multiDexEnabled = true
         targetSdkVersion 33
